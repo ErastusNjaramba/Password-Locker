@@ -6,8 +6,16 @@ class user:
   user_user =[] #Empty user list
 
   def __init__(self,user_name,password):
+    self.user_name=user_name
+    self.user_name=password
 
-    # docstring removed for simplicity
+    # user savings 
+  def save_user (self,user_name, password):
+    self.user_name=user_name
+    self.user_name=password
 
-      self.user_name = user_name
-      self.user_name = password
+    """
+    To save user method and new object to user list
+    """
+          
+          

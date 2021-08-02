@@ -1,9 +1,8 @@
-import pyperclip
-class credentials:
+class Credential:
   """
   a class that creates new credentials for credentials
   """
-  credentials_list =[]
+  credential_list =[]
 
   def __init__(self, credential_name, password,number):
     self.credential_name = credential_name
@@ -11,7 +10,7 @@ class credentials:
     self.number = number
 
 
-  def save_credentials(self):
+  def save_credential(self):
     '''
     save_credential method saves credential object into the credential_list
     '''
