@@ -1,21 +1,25 @@
-class user:
-  """
-  class that generates new instance of user
-  """
-
-  user_user =[] #Empty user list
-
-  def __init__(self,user_name,password):
-    self.user_name=user_name
-    self.user_name=password
-
-    # user savings 
-  def save_user (self,user_name, password):
-    self.user_name=user_name
-    self.user_name=password
-
+class User:
     """
-    To save user method and new object to user list
+    class that generates new instance of user
     """
-          
-          
+
+    user_list =[] #Empty user list
+     #Init method up here
+    def save_user(self,user_name,user_password):
+        '''
+        save user method saves user object into user_list
+        '''
+        User.user_list.append(self)
+    def delete_user(self,user_name,user_password):
+        '''
+        delete_user method deletes a saved user from the user_list
+        '''
+        User.user_list.remove(self)
+
+    def __init__(self,user_name,user_password):
+
+      # docstring removed for simplicity
+
+        self.user_name=user_name
+        self.user_password=user_password
+  
